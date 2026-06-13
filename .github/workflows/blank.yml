@@ -47,6 +47,9 @@ jobs:
       - name: Run Java program
         run: java HelloWorld
 
+      - name: Build JAR
+        run: mvn package
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
