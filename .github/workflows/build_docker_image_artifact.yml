@@ -29,3 +29,6 @@ jobs:
           name: my-java-app-docker-image
           path: my-java-app.tar
           retention-days: 7
+
+      - name: Test Docker container
+        run: docker run my-java-app:${{ github.sha }}
