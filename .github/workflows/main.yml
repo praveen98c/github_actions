@@ -17,8 +17,8 @@ jobs:
           echo "hello world from ${{github.actor}} ${{github.repository}}"
         
         shell: bash
-        run:  |
-          echo "2nd step"
+        - run:  |
+            echo "2nd step"
   second_job:
     name: second job
     runs-on:  ubuntu-latest
