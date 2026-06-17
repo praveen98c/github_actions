@@ -1,0 +1,1 @@
+[![Build Docker image and download](https://github.com/praveen98c/github_actions/actions/workflows/build_docker_image_artifact.yml/badge.svg)](https://github.com/praveen98c/github_actions/actions/workflows/build_docker_image_artifact.yml)
