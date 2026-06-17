@@ -10,13 +10,11 @@ jobs:
     name: first job
     runs-on: ubuntu-latest
     steps:
-      - name: greet the user
         run:  |
           echo "Hello world" 
           echo "hello world 2"
           echo "hello world from ${{github.actor}} ${{github.repository}}"
-        
-        shell: bash
+
         - run:  |
             echo "2nd step"
   second_job:
