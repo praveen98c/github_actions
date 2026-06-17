@@ -1,0 +1,17 @@
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  first_job:
+    name: first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: greet the user
+      run:
+        echo "Hello world"
+        shell: bash
+
+        
