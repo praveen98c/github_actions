@@ -1,3 +1,4 @@
+name: example workflow
 on:
   push:
     branches:
