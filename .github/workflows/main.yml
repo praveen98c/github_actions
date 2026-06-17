@@ -10,13 +10,12 @@ jobs:
     name: first job
     runs-on: ubuntu-latest
     steps:
-        run:  |
-          echo "Hello world" 
-          echo "hello world 2"
-          echo "hello world from ${{github.actor}} ${{github.repository}}"
+        # run:  |
+        #   echo "Hello world" 
+        #   echo "hello world 2"
+        #   echo "hello world from ${{github.actor}} ${{github.repository}}"
 
-        - run:  |
-            echo "2nd step"
+        - run: echo "2nd step"
   second_job:
     name: second job
     runs-on:  ubuntu-latest
