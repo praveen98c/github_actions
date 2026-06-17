@@ -16,6 +16,7 @@ jobs:
         #   echo "hello world from ${{github.actor}} ${{github.repository}}"
         - run: |
             echo "1st step"
+            echo "hello world from ${{github.actor}} ${{github.repository}}"
 
         - run: echo "2nd step"
   second_job:
