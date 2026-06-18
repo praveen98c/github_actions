@@ -16,7 +16,7 @@ jobs:
           echo "repo variable check ${{vars.VAR1}}"
           echo "repo variable ${{vars.REPO_VAR}}"
           echo "${{secrets.AWS_KEY}}"
-    environment: prods
+    environment: prod
   first_job:
     name: first job
     runs-on: ubuntu-latest
