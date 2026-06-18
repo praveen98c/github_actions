@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
+          echo "repo variable ${{vars.REPO_VAR}}"
           echo "${{secrets.AWS_KEY}}"
   first_job:
     name: first job
