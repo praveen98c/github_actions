@@ -25,5 +25,6 @@ jobs:
     steps:
       - name: greet the user using 2nd job
         run: echo "hello fronm 2nd job"
+      - run: tree
 
         
