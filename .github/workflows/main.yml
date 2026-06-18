@@ -8,6 +8,7 @@ on:
 jobs:
   variables_job:
     runs-on: ubuntu-latest
+    environment: prod
     steps:
       - run: |
           echo "repo variable ${{vars.REPO_VAR}}"
