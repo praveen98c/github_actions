@@ -8,11 +8,11 @@ on:
 jobs:
   variables_job:
     runs-on: ubuntu-latest
-    environment: prod
     steps:
       - run: |
           echo "repo variable ${{vars.REPO_VAR}}"
           echo "${{secrets.AWS_KEY}}"
+    environment: prod
   first_job:
     name: first job
     runs-on: ubuntu-latest
