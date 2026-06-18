@@ -15,6 +15,7 @@ jobs:
             echo "hello world 2"
             echo "hello world from ${{github.actor}} ${{github.repository}}"
             echo "${{github.ref}}"
+            echo "${{secrets.AWS_KEY}}"
         - run: |
             echo "1st step"
             echo "hello world from ${{github.actor}} ${{github.repository}}"
