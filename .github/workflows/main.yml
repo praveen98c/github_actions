@@ -6,6 +6,10 @@ on:
   workflow_dispatch:
 
 jobs:
+  variables_job:
+    steps:
+      - run: |
+          echo "${{secrets.AWS_KEY}}"
   first_job:
     name: first job
     runs-on: ubuntu-latest
@@ -15,7 +19,6 @@ jobs:
             echo "hello world 2"
             echo "hello world from ${{github.actor}} ${{github.repository}}"
             echo "${{github.ref}}"
-            echo "${{secrets.AWS_KEY}}"
         - run: |
             echo "1st step"
             echo "hello world from ${{github.actor}} ${{github.repository}}"
